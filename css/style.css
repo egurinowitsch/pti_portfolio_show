@@ -1,0 +1,488 @@
+/* CSS Document */
+body{
+	background-color:#000;
+}
+header{
+	width:100%;
+	height:auto;
+}
+header img{
+	width:100%;
+	height:auto;
+}
+header div{
+	width:100%;
+	height:auto;
+	margin-top:-20%;
+}
+header div h1{
+	text-align:center;
+}
+#header_text1{
+	font-family: 'geosanslightregular';
+	font-size:3em;
+	color:#fff;
+	padding-left:9%;
+}
+#header_text2{
+	font-family: 'alte_haas_groteskbold';
+	font-size:6em;
+	color:#ed1c24;
+}
+#header_text3{
+	 font-family: 'ever_afterregular';
+	 font-size:4.5em;
+	 color:#fff;
+	 padding-left:26%;
+}
+#subheaders{
+	padding-top:1%;
+	width:100%;
+	height:auto;
+	
+}
+#subhead1{
+	float:left;
+	width:48%;
+	background-color:#8b0e04;
+	position:relative;
+	padding:1%;
+	text-align:right;
+}
+#subhead2{
+	float:left;
+	width:48%;
+	background-color:#fff;
+	position:relative;
+	padding:1%;
+}
+#subhead3{
+	background-color:#004a8d;
+	position:relative;
+	padding:1%;
+	text-align:center;
+	clear:both;
+}
+#subhead4{
+	background-color:#8b0e04;
+	position:relative;
+	padding:1%;
+	text-align:center;
+	clear:both;
+}
+#subhead1 h2, #subhead3 h2{
+	font-family:'new_ciclegordita';
+	font-size:2em;
+	color:#fff;
+	letter-spacing:.15em;
+	}
+#subhead2 h2{
+	font-family:'new_ciclegordita';
+	font-size:2em;
+	color:#000;
+	letter-spacing:.15em;
+	}
+#subhead4 h2{
+	font-family:'new_ciclegordita';
+	font-size:1.5em;
+	color:#FFF;
+	letter-spacing:.15em;	
+}
+#content{
+	padding:1% 0;
+	width:100%;
+	height:auto;
+	position:relative;
+	background-color:#fff;
+	overflow:hidden;
+}
+#left{
+	width:auto;
+	float:left;
+	padding-top:.5%;
+	margin:0 0 0 29%;
+	
+}
+#right{
+	width:auto;
+	padding-top:.5%;
+	float:left;
+	margin:0 0 0 5%;
+}
+#content_main-text{
+	text-align:center;
+	font-family: 'geosanslightregular';
+	font-size:1.3em;
+}
+#content_contact-text{
+	font-family: 'alte_haas_groteskbold';
+	font-size:1.2em;
+	padding:3% 0;	
+}
+#content_links{
+	font-family:'new_ciclegordita';
+	font-size:1.2em;
+	padding:3% 0;
+}
+#address{
+	width:100%;
+	font-family:'new_ciclegordita';
+	font-size:1.2em;
+	padding:3% 0;
+}
+#directions{
+	width:100%;
+}
+ul{
+	margin-left:29%;
+	padding:3% 0;
+	font-family: 'geosanslightregular';
+	font-size:1.3em;
+}
+#map{
+	width:42.5%;
+	margin:0 auto;
+	
+}
+iframe{
+	
+	-webkit-box-shadow:  1px 1px 3px 2px #999;
+        
+        box-shadow:  1px 1px 3px 2px #999;
+}
+#credits{
+	width:100%;
+	padding:5% 0 10% 0;
+}
+#credits p{
+	padding-bottom:.5%;
+	margin-left:29%;
+	font-family:'new_ciclegordita';
+	font-size:1.2em;
+}
+a{
+	text-decoration:none;
+}
+a:link {
+	color:#004a8d;
+}      
+a:visited {
+	color:#8b0e04;
+}  
+a:hover {
+	color:#009344;
+	-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+	cursor:pointer;
+}
+#fixed-bar {
+	width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:#be2025;
+    z-index: 100;
+}
+#fixed-bar a {
+    color: white;
+    text-decoration: none;
+}
+#bar-inner {
+    width: 100%;
+    margin: 0 auto;
+    height: 75px;
+    line-height: 36px;
+}
+#bar-inner img{
+	float:left;
+	padding-top:.8%;
+	margin-left:5%;
+	width:47px;
+	height:53px;
+	
+}
+#bar-inner p{
+	color:#fff;
+	float:left;
+	position:relative;
+	text-align:center;
+	margin:1% 0 0 25%;
+	font-family:'new_ciclegordita';
+	font-size:1.2em;
+}
+
+/***********media queries*******************/
+@media screen and (max-width: 1066px){
+	#map{
+		width:55%;
+	}
+}
+@media screen and (max-width: 987px){
+	#map{
+		width:80%;
+	}
+	iframe{
+		width:105%;
+	}
+	#credits{
+		margin-left:-5%;
+	}
+}
+@media screen and (max-width: 831px){
+	#right img{
+		display:none;
+		visibility:hidden;
+	}
+	#credits{
+		padding-bottom:15%;
+	}		
+}
+@media screen and (max-width: 768px){
+	#directions ul{
+		margin-left:10%;
+	}
+	#bar-inner p{
+		margin:0 0 0 15%;
+		width:80%;
+		font-size:1em;
+	}
+	#credits{
+		padding:5% 0 20% 0;
+	}
+}
+@media screen and (max-width: 600px){
+	#header_text2{
+		font-size:4em;
+	}
+	#header_text1{
+		font-size:2em;
+		padding-left:18%;
+	}
+	#header_text3{
+		font-size:3.5em;
+		padding-left:48%;
+	}
+	#bar-inner img{
+		padding-top:1%;
+	}
+	#credits{
+		padding:5% 0 35% 0;
+	}
+	iframe{
+		max-width:440px;
+		width:100%; 
+		height:280px;
+		margin-left:2%;
+	}
+	#bar-inner p{
+		width:60%;
+		font-size:.8em;
+		line-height:1em;
+		margin:4% 0 0 15%;
+	}
+}
+@media screen and (max-width: 520px){
+	#subhead1 h2, #subhead2 h2{
+		font-size:1.5em;
+	}
+}
+@media screen and (max-width: 412px){
+	#left{
+		margin:0 0 0 23%;
+	}
+	#credits{
+		margin-left:-13%;
+		font-size:.8em;
+	}
+}
+@media screen and (max-width: 384px){
+	#subhead1 h2, #subhead2 h2{
+		font-size:1em;
+	}
+}
+@media screen and (max-width: 320px){
+	#header_text2{
+		font-size:2em;
+	}
+	#header_text1{
+		font-size:1em;
+		padding-left:18%;
+	}
+	#header_text3{
+		font-size:1.5em;
+		padding-left:48%;
+	}
+	#left{
+		margin:0 0 0 10%;
+	}
+	iframe{
+		max-width:320px;
+		width:100%; 
+		height:200px;
+		margin-left:2%;
+	}
+	#bar-inner p{
+		margin:4% 0 0 10%;
+	}
+}
+
+
+/***********end of media queries*******************/
+
+
+
+/************fonts*****************/
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on May 28, 2013 */
+
+
+
+@font-face {
+    font-family: 'alte_haas_groteskbold';
+    src: url('../fonts/altehaasgroteskbold-webfont.eot');
+    src: url('../fonts/altehaasgroteskbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/altehaasgroteskbold-webfont.woff') format('woff'),
+         url('../fonts/altehaasgroteskbold-webfont.ttf') format('truetype'),
+         url('../fonts/altehaasgroteskbold-webfont.svg#alte_haas_groteskbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alte_haas_groteskregular';
+    src: url('../fonts/altehaasgroteskregular-webfont.eot');
+    src: url('../fonts/altehaasgroteskregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/altehaasgroteskregular-webfont.woff') format('woff'),
+         url('../fonts/altehaasgroteskregular-webfont.ttf') format('truetype'),
+         url('../fonts/altehaasgroteskregular-webfont.svg#alte_haas_groteskregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ever_afterregular';
+    src: url('../fonts/everafter-webfont.eot');
+    src: url('../fonts/everafter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/everafter-webfont.woff') format('woff'),
+         url('../fonts/everafter-webfont.ttf') format('truetype'),
+         url('../fonts/everafter-webfont.svg#ever_afterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'geosanslightregular';
+    src: url('../fonts/geosanslight-webfont.eot');
+    src: url('../fonts/geosanslight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geosanslight-webfont.woff') format('woff'),
+         url('../fonts/geosanslight-webfont.ttf') format('truetype'),
+         url('../fonts/geosanslight-webfont.svg#geosanslightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'new_ciclefina_italic';
+    src: url('../fonts/new_cicle_fina_italic-webfont.eot');
+    src: url('../fonts/new_cicle_fina_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new_cicle_fina_italic-webfont.woff') format('woff'),
+         url('../fonts/new_cicle_fina_italic-webfont.ttf') format('truetype'),
+         url('../fonts/new_cicle_fina_italic-webfont.svg#new_ciclefina_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'new_ciclefina';
+    src: url('../fonts/new_cicle_fina-webfont.eot');
+    src: url('../fonts/new_cicle_fina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new_cicle_fina-webfont.woff') format('woff'),
+         url('../fonts/new_cicle_fina-webfont.ttf') format('truetype'),
+         url('../fonts/new_cicle_fina-webfont.svg#new_ciclefina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'new_ciclegordita_italic';
+    src: url('../fonts/new_cicle_gordita_italic-webfont.eot');
+    src: url('../fonts/new_cicle_gordita_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new_cicle_gordita_italic-webfont.woff') format('woff'),
+         url('../fonts/new_cicle_gordita_italic-webfont.ttf') format('truetype'),
+         url('../fonts/new_cicle_gordita_italic-webfont.svg#new_ciclegordita_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'new_ciclegordita';
+    src: url('../fonts/new_cicle_gordita-webfont.eot');
+    src: url('../fonts/new_cicle_gordita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new_cicle_gordita-webfont.woff') format('woff'),
+         url('../fonts/new_cicle_gordita-webfont.ttf') format('truetype'),
+         url('../fonts/new_cicle_gordita-webfont.svg#new_ciclegordita') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'new_ciclesemi_italic';
+    src: url('../fonts/new_cicle_semi_italic-webfont.eot');
+    src: url('../fonts/new_cicle_semi_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new_cicle_semi_italic-webfont.woff') format('woff'),
+         url('../fonts/new_cicle_semi_italic-webfont.ttf') format('truetype'),
+         url('../fonts/new_cicle_semi_italic-webfont.svg#new_ciclesemi_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'new_ciclesemi';
+    src: url('../fonts/new_cicle_semi-webfont.eot');
+    src: url('../fonts/new_cicle_semi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/new_cicle_semi-webfont.woff') format('woff'),
+         url('../fonts/new_cicle_semi-webfont.ttf') format('truetype'),
+         url('../fonts/new_cicle_semi-webfont.svg#new_ciclesemi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/************end of fonts*****************/
