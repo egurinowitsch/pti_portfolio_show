@@ -10,6 +10,10 @@ header img{
 	width:100%;
 	height:auto;
 }
+#header_img{
+	display:none;
+	visibility:hidden;
+}
 header div{
 	width:100%;
 	height:auto;
@@ -113,6 +117,8 @@ header div h1{
 	text-align:center;
 	font-family: 'geosanslightregular';
 	font-size:1.3em;
+	width:70%;
+	margin-left:15%;
 }
 #content_contact-text{
 	font-family: 'alte_haas_groteskbold';
@@ -251,8 +257,18 @@ a:hover {
 	#credits{
 		padding:5% 0 20% 0;
 	}
+	
+}
+@media screen and (max-width: 621px){
+	#content_main-text{
+		width:90%;
+	}
 }
 @media screen and (max-width: 600px){
+	#content_main-text{
+		text-align:left;
+		margin:0 2% 0 5%;
+	}
 	#header_text2{
 		font-size:4em;
 	}
@@ -282,10 +298,33 @@ a:hover {
 		line-height:1em;
 		margin:4% 0 0 15%;
 	}
+	#header_img{
+		display:block;
+		visibility:visible;
+		width:100%;
+	}
+	header img{
+		display:none;
+		visibility:hidden;
+	}
 }
 @media screen and (max-width: 520px){
 	#subhead1 h2, #subhead2 h2{
 		font-size:1.5em;
+	}
+	
+}
+@media screen and (max-width: 425px){
+	
+	
+	#header_text2{
+		font-size:3em;
+	}
+	#header_text1{
+		padding-left:5%;
+	}
+	#header_text3{
+		padding-left:40%;
 	}
 }
 @media screen and (max-width: 412px){
