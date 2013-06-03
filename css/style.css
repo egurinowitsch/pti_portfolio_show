@@ -71,7 +71,7 @@ header div h1{
 	background-color:#8b0e04;
 	position:relative;
 	padding:1%;
-	text-align:center;
+	
 	clear:both;
 }
 #subhead1 h2, #subhead3 h2{
@@ -90,10 +90,14 @@ header div h1{
 	font-family:'new_ciclegordita';
 	font-size:1.5em;
 	color:#FFF;
-	letter-spacing:.15em;	
+	letter-spacing:.15em;
+	max-width:680px;
+	width:100%;
+	margin:0 auto;	
 }
 #content{
-	padding:1% 0;
+	
+	padding:2% 0;
 	width:100%;
 	height:auto;
 	position:relative;
@@ -101,24 +105,32 @@ header div h1{
 	overflow:hidden;
 }
 #left{
-	width:auto;
+	max-width:450px;
+	width:100%;
 	float:left;
 	padding-top:.5%;
-	margin:0 0 0 29%;
+	margin:0 0 0 15%;
 	
 }
 #right{
-	width:auto;
-	padding-top:.5%;
-	float:left;
-	margin:0 0 0 5%;
+	
+	padding-top:0;
+	float:right;
+	margin:0 0 0 -10%;
+}
+#left-right{
+	max-width:700px;
+	width:100%;
+	margin:0 auto;
 }
 #content_main-text{
-	text-align:center;
+	text-align:left;
 	font-family: 'geosanslightregular';
 	font-size:1.3em;
-	width:70%;
-	margin-left:15%;
+	max-width:680px;
+	width:100%;
+	margin:0 auto;
+	padding:.5% 0 1% 0;
 }
 #content_contact-text{
 	font-family: 'alte_haas_groteskbold';
@@ -140,13 +152,18 @@ header div h1{
 	width:100%;
 }
 ul{
-	margin-left:29%;
-	padding:3% 0;
+	max-width:680px;
+	width:100%;
+	margin:0 auto;	
+	padding:2% 0;
 	font-family: 'geosanslightregular';
 	font-size:1.3em;
+	line-height:1.4em;
+	letter-spacing:.05em;
 }
 #map{
-	width:42.5%;
+	max-width:680px;
+	width:100%;
 	margin:0 auto;
 	
 }
@@ -157,12 +174,13 @@ iframe{
         box-shadow:  1px 1px 3px 2px #999;
 }
 #credits{
+	max-width:680px;
 	width:100%;
+	margin:0 auto;
 	padding:5% 0 10% 0;
 }
 #credits p{
 	padding-bottom:.5%;
-	margin-left:29%;
 	font-family:'new_ciclegordita';
 	font-size:1.2em;
 }
@@ -220,7 +238,7 @@ a:hover {
 }
 
 /***********media queries*******************/
-@media screen and (max-width: 1066px){
+/*@media screen and (max-width: 1066px){
 	#map{
 		width:55%;
 	}
@@ -232,22 +250,16 @@ a:hover {
 	iframe{
 		width:105%;
 	}
+}*/
+@media screen and (max-width: 831px){
 	#credits{
-		margin-left:-5%;
+		padding-bottom:15%;
 	}
 }
-@media screen and (max-width: 831px){
+@media screen and (max-width: 768px){
 	#right img{
 		display:none;
 		visibility:hidden;
-	}
-	#credits{
-		padding-bottom:15%;
-	}		
-}
-@media screen and (max-width: 768px){
-	#directions ul{
-		margin-left:10%;
 	}
 	#bar-inner p{
 		margin:0 0 0 15%;
@@ -256,19 +268,17 @@ a:hover {
 	}
 	#credits{
 		padding:5% 0 20% 0;
+		max-width:500px;
 	}
-	
-}
-@media screen and (max-width: 621px){
-	#content_main-text{
-		width:90%;
+	#subhead1 h2, #subhead2 h2{
+		font-size:1.5em;
+	}
+	#content_main-text, #subhead4 h2, ul, #map, iframe{
+		max-width:500px;
 	}
 }
 @media screen and (max-width: 600px){
-	#content_main-text{
-		text-align:left;
-		margin:0 2% 0 5%;
-	}
+	
 	#header_text2{
 		font-size:4em;
 	}
@@ -286,12 +296,6 @@ a:hover {
 	#credits{
 		padding:5% 0 35% 0;
 	}
-	iframe{
-		max-width:440px;
-		width:100%; 
-		height:280px;
-		margin-left:2%;
-	}
 	#bar-inner p{
 		width:60%;
 		font-size:.8em;
@@ -307,12 +311,31 @@ a:hover {
 		display:none;
 		visibility:hidden;
 	}
+	
 }
 @media screen and (max-width: 520px){
 	#subhead1 h2, #subhead2 h2{
-		font-size:1.5em;
+		font-size:1.1em;
 	}
-	
+	#subhead4 h2, ul, #credits, #map, iframe{
+		max-width:400px;
+	}
+	#content_main-text{
+		max-width:400px;
+		padding:5% -4% 5% 5%;
+	}
+}
+@media screen and (max-width: 450px){
+	#subhead4 h2, ul, #credits, #map, iframe{
+		max-width:350px;
+	}
+	#content_main-text{
+		max-width:350px;
+		padding:5% -4% 5% 5%;
+	}
+	#left-right{
+		max-width:300px;
+	}
 }
 @media screen and (max-width: 425px){
 	
@@ -329,19 +352,34 @@ a:hover {
 }
 @media screen and (max-width: 412px){
 	#left{
-		margin:0 0 0 23%;
+		margin:0 0 0 14%;
 	}
-	#credits{
-		margin-left:-13%;
-		font-size:.8em;
+}
+@media screen and (max-width: 400px){
+	#content_main-text, #subhead4 h2, ul, #credits{
+		max-width:320px;
+	}
+	#map, iframe{
+		max-width:320px;
+		height:250px;
+	}
+	ul{
+		font-size:1em;
 	}
 }
 @media screen and (max-width: 384px){
 	#subhead1 h2, #subhead2 h2{
-		font-size:1em;
+		font-size:.8em;
 	}
 }
 @media screen and (max-width: 320px){
+	#map, iframe{
+		max-width:320px;
+		height:40%;
+	}
+	#content_main-text, #subhead4 h2, ul, #credits, #map, iframe{
+		max-width:200px;	
+	}
 	#header_text2{
 		font-size:2em;
 	}
@@ -355,12 +393,6 @@ a:hover {
 	}
 	#left{
 		margin:0 0 0 10%;
-	}
-	iframe{
-		max-width:320px;
-		width:100%; 
-		height:200px;
-		margin-left:2%;
 	}
 	#bar-inner p{
 		margin:4% 0 0 10%;
